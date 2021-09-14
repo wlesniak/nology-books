@@ -1,0 +1,23 @@
+spring:
+  datasource:
+    url: 
+    username: 
+    password: 
+
+  data:
+    rest:
+      base-path: /api
+  jpa:
+    database-platform: org.hibernate.dialect.MySQL5InnoDBDialect
+    show-sql: true
+    hibernate:
+      ddl-auto: update
+---
+spring:
+  config:
+    activate:
+      on-profile: aws
+  datasource:
+    url: jdbc:
+    username: 
+    password: 
